@@ -35,8 +35,8 @@ class Server {
 
     _attachHeaders() {
         this.app.use(async (ctx, next) => {
-            ctx.set('Access-Control-Allow-Origin', '*');
-            ctx.set('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, x-parse-key, x-parse-id, organisation-id');
+            ctx.set('Access-Control-Allow-Origin', 'https://finsensor.vercel.app');
+            ctx.set('Access-Control-Allow-Headers', 'Content-Type');
             ctx.set('Access-Control-Allow-Methods', 'POST, GET, PUT, DELETE, OPTIONS');
             await next();
         });
