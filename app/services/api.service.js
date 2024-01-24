@@ -924,7 +924,7 @@ unitDetails = equation
                 //     });
                 // if (ctx.originalUrl) {
                 //     const { URL } = require('url');
-                //     const urlString = "https://wild-pink-magpie-hem.cyclic.app" + ctx.originalUrl;
+                //     const urlString = "https://finsensor-reporting-backend.onrender.com" + ctx.originalUrl;
                 //     const parsedUrl = new URL(urlString);
                 //     var queryParams = parsedUrl.searchParams;
                 //     var status = queryParams.get('status'); // 'John'
@@ -1284,7 +1284,7 @@ unitDetails = equation
             try {
                 let params = ctx.request.body
                 let txn_id = params.data.txn_id
-                resolve({url:"https://stg-id.uaepass.ae/idshub/authorize?response_type=code&client_id=sandbox_stage&scope=urn:uae:digitalid:profile:general&state=HnlHOJTkTb66Y5H&redirect_uri=https://wild-pink-magpie-hem.cyclic.app/api/signinng&acr_values=urn:safelayer:tws:policies:authentication:level:low"})
+                resolve({url:"https://stg-id.uaepass.ae/idshub/authorize?response_type=code&client_id=sandbox_stage&scope=urn:uae:digitalid:profile:general&state=HnlHOJTkTb66Y5H&redirect_uri=https://finsensor-reporting-backend.onrender.com/api/signinng&acr_values=urn:safelayer:tws:policies:authentication:level:low"})
                 if (params.url) {
                     const { URL } = require('url');
                     const urlString = params.url;
